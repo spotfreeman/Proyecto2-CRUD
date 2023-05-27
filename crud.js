@@ -10,13 +10,11 @@ const estado = document.getElementById('estado')
 // boton de accion que captura los datos del los inputs definidos anteriormente
 const boton = document.getElementById('boton')
 
-
 const tablacontenido = document.getElementById('cuerpoTabla')
 
 const form = document.getElementById('form')
 
 const actualizar = document.getElementById('actualizar')
-
 
 traerLS()
 listar()
@@ -25,7 +23,6 @@ let editMode = false;
 let idEditing = null;
 
 boton.addEventListener('click', add)
-
 
 // funciones de la aplicacion CRUD
 
@@ -37,21 +34,20 @@ function add(e) {
 
     // se guardan los valores
     const pendiente = {
-        id,
+        id: id.value,
         procedencia: procedencia.value,
         documento: documento.value,
         responsable: responsable.value,
         estado: estado.value
-    }
 
+    }
+    console.log(id)
     // agregamos un nuevo elemento al Array
     listaPendientes.push(pendiente)
 
     // actualizamos el listado
     listar()
-    //resetForm()
-
-
+    resetForm()
     saveLS()
 
 }
@@ -90,9 +86,9 @@ function listar() {
 
 }
 
-// function resetForm() {
-//     form.reset()
-// }
+function resetForm() {
+    form.reset()
+}
 
 function eliminarFila(id) {
 
@@ -103,7 +99,6 @@ function eliminarFila(id) {
     saveLS()
     traerLS()
     listar()
-
 }
 
 function editarFila(id) {

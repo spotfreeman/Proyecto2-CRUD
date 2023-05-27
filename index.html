@@ -39,7 +39,7 @@
             <h5 class="card-title">Ingreso de documentación.</h5>
             <p class="card-text">Ingrese datos para los registros y seguimiento.</p>
 
-            <form>
+            <form id="form">
                 <div class="input-group mb-3">
                     <span class="input-group-text" id="inputGroup-sizing-default">Procedencia</span>
                     <input id="procedencia" type="text" class="form-control" aria-label="Sizing example input"
@@ -68,16 +68,6 @@
                     <button id="boton" type="submit" class="btn btn-primary align-content-center">Agregar Nuevo</button>
                     <button id="boton" type="submit" class="btn btn-primary align-content-center">Actualizar</button>
                 </div>
-
-
-                <!-- 
-
-                <input required id="nombre" type="text" placeholder="Procedencia">
-                <input required id="apellido" type="text" placeholder="Documento">
-                <input required id="edad" type="text" placeholder="Responsable">
-                <input required id="edad" type="text" placeholder="Estado"> -->
-
-
             </form>
         </div>
     </div>
@@ -93,6 +83,7 @@
                     <th>Documento</th>
                     <th>Responsable</th>
                     <th>Estado</th>
+                    <th>Accion</th>
                 </tr>
                 <tbody id="cuerpoTabla">
 
