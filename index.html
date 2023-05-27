@@ -14,7 +14,7 @@
 </head>
 
 <body>
-
+    <!-- Navbar -->
     <nav class="navbar bg-primary" data-bs-theme="dark">
         <div class=" container-fluid">
             <a class="navbar-brand" href="#">
@@ -31,7 +31,8 @@
         </div>
     </nav>
 
-
+    <!-- Titulo y encabezados  -->
+    <!-- Tarjetas de ingreso -->
     <div class="card m-lg-2">
         <h5 class="card-header">Control documental 2023</h5>
         <div class="card-body">
@@ -39,35 +40,38 @@
             <p class="card-text">Ingrese datos para los registros y seguimiento.</p>
 
             <form>
-                <div class="row">
-                    <div class="col">
-                        <input required id="nombre" type="text" class="form-control" placeholder="Procedencia"
-                            aria-label="First name">
-                        <button id="boton" type="submit" class="btn btn-primary">Agregar 1</button>
-                    </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Procedencia</span>
+                    <input id="procedencia" type="text" class="form-control" aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-default">
+                </div>
 
-                    <div class="col">
-                        <input required id="apellido" type=" text" class="form-control" placeholder="Documento"
-                            aria-label="Last name">
-                    </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Documento</span>
+                    <input id="documento" type="text" class="form-control" aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-default">
                 </div>
-                <div class="row">
-                    <div class="col">
-                        <input required id="edad" type="text" class="form-control" placeholder="Responsable"
-                            aria-label="First name">
-                    </div>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Responsable</span>
+                    <input id="responsable" type="text" class="form-control" aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-default">
                 </div>
-                <div class="row">
-                    <div class="col">
-                        <input required id="edad" type="text" class="form-control" placeholder="Estado"
-                            aria-label="First name">
-                        <button id="boton" type="submit" class="btn btn-primary">Agregar 1</button>
-                    </div>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Estado</span>
+                    <input id="estado" type="text" class="form-control" aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-default">
                 </div>
-                <button id="boton" type="submit" class="btn btn-primary">Agregar 2</button>
+
+                <div class="align-content-center">
+                    <button id="boton" type="submit" class="btn btn-primary align-content-center">Agregar Nuevo</button>
+                    <button id="boton" type="submit" class="btn btn-primary align-content-center">Actualizar</button>
+                </div>
 
 
                 <!-- 
+
                 <input required id="nombre" type="text" placeholder="Procedencia">
                 <input required id="apellido" type="text" placeholder="Documento">
                 <input required id="edad" type="text" placeholder="Responsable">
@@ -85,10 +89,10 @@
 
             <table class="table table-striped">
                 <tr>
-                    <th>Nombre</th>
-                    <th>Apellido</th>
-                    <th>Edad</th>
-                    <th>Accion</th>
+                    <th>Procedencia</th>
+                    <th>Documento</th>
+                    <th>Responsable</th>
+                    <th>Estado</th>
                 </tr>
                 <tbody id="cuerpoTabla">
 
@@ -115,7 +119,7 @@
         </tbody>
     </table> -->
 
-    <script src="practica.js"></script>
+    <script src="crud.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
