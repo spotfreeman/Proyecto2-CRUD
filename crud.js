@@ -92,9 +92,9 @@ function resetForm() {
 
 function eliminarFila(id) {
 
-    const index = tareas.findIndex((el) => el.id == id)
+    const index = listaPendientes.findIndex((el) => el.id == id)
 
-    tareas.splice(index, 1)
+    listaPendientes.splice(index, 1)
 
     saveLS()
     traerLS()
@@ -109,7 +109,7 @@ function editarFila(id) {
     boton.classList.add('hide');
     actualizar.classList.remove('hide');
 
-    const index = tareas.findIndex((el) => el.id == id)
+    const index = listaPendientes.findIndex((el) => el.id == id)
 
     const tarea = tareas[index]
 
@@ -120,9 +120,9 @@ function editarFila(id) {
 function edit(e) {
     e.preventDefault()
 
-    const index = tareas.findIndex((el) => el.id == idEditing)
+    const index = listaPendientes.findIndex((el) => el.id == idEditing)
 
-    const tarea = {
+    const pendiente = {
         id: idEditing,
         title: title.value,
         desc: desc.value,
