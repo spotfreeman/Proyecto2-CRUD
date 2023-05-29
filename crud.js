@@ -10,9 +10,12 @@ const estado = document.getElementById('estado')
 // boton de accion que captura los datos del los inputs definidos anteriormente
 const boton = document.getElementById('boton')
 
+// definimos objeto TABLA
 const tablacontenido = document.getElementById('cuerpoTabla')
 
+// definimos objeto Formulario como id="form"
 const form = document.getElementById('form')
+
 
 const actualizar = document.getElementById('actualizar')
 
@@ -22,7 +25,9 @@ listar()
 let editMode = false;
 let idEditing = null;
 
+// Definimos la funcion que ejecuta cada boton
 boton.addEventListener('click', add)
+actualizar.addEventListener('click', edit)
 
 // funciones de la aplicacion CRUD
 
@@ -111,10 +116,13 @@ function editarFila(id) {
 
     const index = listaPendientes.findIndex((el) => el.id == id)
 
-    const tarea = tareas[index]
+    const pendiente = listaPendientes[index]
 
-    title.value = tarea.title
-    desc.value = tarea.desc
+
+    procedencia.value = pendiente.procedencia
+    documento.value = pendiente.documento
+    responsable.value = pendiente.responsable
+    estado.value = pendiente.estado
 }
 
 function edit(e) {
@@ -124,12 +132,13 @@ function edit(e) {
 
     const pendiente = {
         id: idEditing,
-        title: title.value,
-        desc: desc.value,
-        completed: false
+        procedencia: procedencia.value,
+        documento: documento.value,
+        responsable: responsable.value,
+        estado: estado.value
     }
 
-    tareas[index] = tarea
+    listaPendientes[index] = pendiente
 
     saveLS()
     traerLS()
@@ -142,5 +151,3 @@ function edit(e) {
     boton.classList.remove('hide');
     actualizar.classList.add('hide');
 }
-
-actualizar.addEventListener('click', edit)
