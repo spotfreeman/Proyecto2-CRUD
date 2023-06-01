@@ -2,6 +2,8 @@
 let listaPendientes = []
 
 // Inputs que guardaremos en localStorage
+const id = document.getElementById('id')
+
 const procedencia = document.getElementById('procedencia')
 const documento = document.getElementById('documento')
 const responsable = document.getElementById('responsable')
@@ -16,7 +18,6 @@ const tablacontenido = document.getElementById('cuerpoTabla')
 // definimos objeto Formulario como id="form"
 const form = document.getElementById('form')
 
-
 const actualizar = document.getElementById('actualizar')
 
 traerLS()
@@ -27,10 +28,8 @@ let idEditing = null;
 
 // Definimos la funcion que ejecuta cada boton
 boton.addEventListener('click', add)
-actualizar.addEventListener('click', edit)
 
 // funciones de la aplicacion CRUD
-
 function add(e) {
     e.preventDefault()
 
@@ -39,7 +38,7 @@ function add(e) {
 
     // se guardan los valores
     const pendiente = {
-        id: id.value,
+        id,
         procedencia: procedencia.value,
         documento: documento.value,
         responsable: responsable.value,
@@ -49,7 +48,7 @@ function add(e) {
     console.log(id)
     // agregamos un nuevo elemento al Array
     listaPendientes.push(pendiente)
-
+    console.log(listaPendientes)
     // actualizamos el listado
     listar()
     resetForm()
@@ -57,19 +56,23 @@ function add(e) {
 
 }
 
+// Trae el contenidoo de la lista.
 function traerLS() {
 
     listaPendientes = JSON.parse(localStorage.getItem('listado'))
 
+    // muestra el arreglo SI tiene contenido.
     if (listaPendientes) {
         listaPendientes = listaPendientes
-    } else {
+    }
+    // SI NO muestra el arreglo vacio.
+    else {
         listaPendientes = []
     }
 }
 
 function saveLS() {
-    localStorage.setItem('listado', JSON.stringify(pendiente))
+    localStorage.setItem('listado', JSON.stringify(listaPendientes))
 }
 
 
@@ -83,12 +86,11 @@ function listar() {
     <td>${pendiente.responsable}</td>
     <td>${pendiente.estado}</td>
     <td>
-    <button onclick="editarFila(${pendiente.id})">Editar</button>
-    <button onclick="eliminarFila(${pendiente.id})">Eliminar</button>
+    <button class="btn btn-primary align-content-center" onclick="editarFila(${pendiente.id})">Editar</button>
+    <button class="btn btn-danger align-content-center" onclick="eliminarFila(${pendiente.id})">Eliminar</button>
     </td>
     `
     })
-
 }
 
 function resetForm() {
@@ -118,7 +120,6 @@ function editarFila(id) {
 
     const pendiente = listaPendientes[index]
 
-
     procedencia.value = pendiente.procedencia
     documento.value = pendiente.documento
     responsable.value = pendiente.responsable
@@ -139,7 +140,8 @@ function edit(e) {
     }
 
     listaPendientes[index] = pendiente
-
+    boton.classList.remove('hide');
+    actualizar.classList.add('hide');
     saveLS()
     traerLS()
     listar()
@@ -148,6 +150,6 @@ function edit(e) {
     editMode = false;
     idEditing = null;
 
-    boton.classList.remove('hide');
-    actualizar.classList.add('hide');
+
 }
+actualizar.addEventListener('click', edit)

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -42,24 +42,24 @@
             <form id="form">
                 <div class="input-group mb-3">
                     <span class="input-group-text" id="inputGroup-sizing-default">Procedencia</span>
-                    <input id="procedencia" type="text" class="form-control" aria-label="Sizing example input"
+                    <input required id="procedencia" type="text" class="form-control" aria-label="Sizing example input"
                         aria-describedby="inputGroup-sizing-default">
                 </div>
 
                 <div class="input-group mb-3">
                     <span class="input-group-text" id="inputGroup-sizing-default">Documento</span>
-                    <input id="documento" type="text" class="form-control" aria-label="Sizing example input"
+                    <input required id="documento" type="text" class="form-control" aria-label="Sizing example input"
                         aria-describedby="inputGroup-sizing-default">
                 </div>
 
                 <div class="input-group mb-3">
                     <span class="input-group-text" id="inputGroup-sizing-default">Responsable</span>
-                    <input id="responsable" type="text" class="form-control" aria-label="Sizing example input"
+                    <input required id="responsable" type="text" class="form-control" aria-label="Sizing example input"
                         aria-describedby="inputGroup-sizing-default">
                 </div>
 
                 <div>
-                    <select id="estado" class="form-select mb-3" aria-label="Default select example">
+                    <select required id="estado" class="form-select mb-3" aria-label="Default select example">
                         <option selected> - Seleccionar Estado - </option>
                         <option value="Pendiente">Pendiente</option>
                         <option value="Respondido">Respondido</option>
@@ -68,10 +68,13 @@
                 </div>
 
                 <div class="align-content-center m-lg-2">
-                    <button id="boton" type="submit" class="btn btn-primary align-content-center">Agregar Nuevo</button>
+                    <button id="boton" type="submit" class="btn btn-success align-content-center">Agregar
+                        Nuevo</button>
                     <button id="actualizar" type="submit"
-                        class="btn btn-primary align-content-center">Actualizar</button>
+                        class="btn btn-primary align-content-center hide">Actualizar</button>
                 </div>
+
+
             </form>
         </div>
     </div>
@@ -93,7 +96,6 @@
 
                 </tbody>
             </table>
-
         </div>
     </div>
 
