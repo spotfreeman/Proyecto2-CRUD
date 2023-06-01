@@ -71,11 +71,12 @@ function traerLS() {
     }
 }
 
+// Guarda un elemento en formato Json dentro del arreglo con la llave "listado"
 function saveLS() {
     localStorage.setItem('listado', JSON.stringify(listaPendientes))
 }
 
-
+// Funcion para mostrar cada elemento en la tabla "tablacontenido" => cuerpoTabla 
 function listar() {
     tablacontenido.innerHTML = ''
 
@@ -93,10 +94,13 @@ function listar() {
     })
 }
 
+
+// Funcion para limpiar el Formulario
 function resetForm() {
     form.reset()
 }
 
+// Funcion para eliminar un item del Arreglo acorde el numero id que es utilizado como indice
 function eliminarFila(id) {
 
     const index = listaPendientes.findIndex((el) => el.id == id)
@@ -108,11 +112,13 @@ function eliminarFila(id) {
     listar()
 }
 
+// Funcion para editar un elemento del Arreglo acorde al id 
 function editarFila(id) {
 
     editMode = true;
     idEditing = id;
 
+    // muestra el boton y oculta el boton Actualizar con CSS hide
     boton.classList.add('hide');
     actualizar.classList.remove('hide');
 
@@ -126,6 +132,7 @@ function editarFila(id) {
     estado.value = pendiente.estado
 }
 
+// Funcion donde toma los datos del id y los guarda en el mismom id
 function edit(e) {
     e.preventDefault()
 
