@@ -1,4 +1,4 @@
-// Arreglo donde se guardaran en localStorage
+// Arreglo principal el cual guardara los datos en localStorage
 let listaPendientes = []
 
 // Inputs que guardaremos en localStorage
