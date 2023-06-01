@@ -1,6 +1,49 @@
-# Proyecto2-CRUD
+# Proyecto2 - CRUD
 
-Proyecto CRUD realizado en JavaScript requerido para el cumplimiento de metas del Bootcamp FullStack de UDD, demostrando las tecnologías aprendidas durante las clases que corresponden a HTML5, CSS, Bootstrap, Git, Github, Github Pages y JavaScript.
+Gestor de documentos con HTML, CSS y Javascript
+## Descripcion
 
-Fecha límite entrega : Por definir.
+Este proyecto es un gestor de documentos simple para un departamento, donde les permitira crear, organizar y realizar un seguimiento de los documentos recibidos.
+Este se encuentra realizado con las tecnologias de HTML5, CSS, Bootstrap, Git, Github, Github Pages y JavaScript, aplicando los conocimientos en el manejo de datos mediante "LocalStorage"
 
+Fecha límite entrega : 04-06-2023.
+
+## Insignias
+
+![Captura de pantalla](screenshot.png)
+
+## Visual
+
+Insertar imagen a
+
+## Construido con 🛠️
+
+Herramientas utilizadas para crear el proyecto:
+
+* HTML - Estructura del sitio web.
+* CSS - Estilos y diseño visual.
+* Bootstrap - Estilos y diseño visual.
+* JavaScript - Lógica y funcionalidad del gestor de tareas.
+* DOM - Manipulación del árbol de objetos del documento.
+* Local Storage - Almacenamiento de datos en el navegador.
+
+## Contribuir 🖇️
+
+Este proyecto es de código abierto y las contribuciones son bienvenidas. Puedes colaborar mejorando el diseño, agregando nuevas funcionalidades o corrigiendo errores. ¡Siéntete libre de enviar tus pull requests!
+
+## :man_technologist: 
+
+## Licencia 📄
+
+Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE.md](LICENSE.md) para obtener más detalles.
+
+## Expresiones de gratitud 🎁
+
+Agradecimientos especiales a todos por el apoyo y la motivacion a realizar este Bootcamp...
+Este archivo readme se ha desarrollado utilizando como referencia los siguientes proyectos:
+
+* [template-readme-es](https://github.com/brayandiazc/template-readme-es) - creado por [Brayan Diaz C](https://github.com/brayandiazc)
+
+---
+⌨ ️con ❤️ por [Raul Oyarzun Becerra](https://github.com/spotfreeman) 
+<a href="https://www.linkedin.com/in/ra%C3%BAl-oyarz%C3%BAn-becerra-6430b171/"> Linkedin </a>
