@@ -162,18 +162,29 @@ function edit(e) {
 actualizar.addEventListener('click', edit)
 
 
-const botonTiempo = document.getElementById('modoTiempo');
-botonTiempo.addEventListener('click', modoTiempo);
 
-let dia = true;
-function modoTiempo() {
-    if (dia == true) {
-        botonTiempo.classList.add('bg-body');
-        botonTiempo.classList.remove('bg-secondary');
-        dia = false;
-    } else {
-        botonTiempo.classList.remove('bg-body');
-        botonTiempo.classList.add('bg-secondary');
-        dia = true;
-    }
-}
+// // Futuras funciones
+
+// const botonTiempo = document.getElementById('tiempo');
+// botonTiempo.addEventListener('click', modoTiempo);
+
+// let estadoTiempo = false;
+
+// function modoTiempo() {
+
+//     if (dia == true) {
+//         dia();
+//     } else {
+//         noche();
+//     }
+// }
+// function dia() {
+//     botonTiempoTest.cla
+//     botonTiempoElemento.classList.add('bg-body');
+//     botonTiempoElemento.classList.remove('bg-secondary');
+//     dia = true;
+// }
+// function noche() {
+//     botonTiempoElemento.classList.remove('bg-body');
+//     botonTiempoElemento.classList.add('bg-secondary');
+// }
