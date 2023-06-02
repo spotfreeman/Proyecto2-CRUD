@@ -4,7 +4,7 @@ Gestor de documentos con HTML, CSS y Javascript
 
 <a href="https://spotfreeman.github.io/Proyecto2-CRUD/">https://spotfreeman.github.io/Proyecto2-CRUD/</a>
 
-## Descripcion
+## Descripción
 
 Este proyecto es un gestor de documentos simple para un departamento, donde permitirá al usuario crear, actualizar y eliminar registros para un seguimiento del flujo de información recibida.
 Este proyecto se encuentra realizado con las tecnologías de HTML5, CSS, Bootstrap, Git, Github, Github Pages y JavaScript, aplicando los conocimientos en el manejo de datos mediante "LocalStorage" y DOM.
@@ -47,5 +47,5 @@ Este archivo readme se ha desarrollado utilizando como referencia los siguientes
 * [template-readme-es](https://github.com/brayandiazc/template-readme-es) - creado por [Brayan Diaz C](https://github.com/brayandiazc)
 
 ---
-⌨ ️con ❤️ por [Raul Oyarzun Becerra](https://github.com/spotfreeman) 
+⌨ ️con ❤️ por [Raul Oyarzun Becerra](https://github.com/spotfreeman) Gracias por el apoyo! 
 <a href="https://www.linkedin.com/in/ra%C3%BAl-oyarz%C3%BAn-becerra-6430b171/"> Linkedin </a>
