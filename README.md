@@ -4,8 +4,8 @@ Gestor de documentos con HTML, CSS y Javascript
 
 ## Descripcion
 
-Este proyecto es un gestor de documentos simple para un departamento, donde les permitira crear, organizar y realizar un seguimiento de los documentos recibidos.
-Este se encuentra realizado con las tecnologias de HTML5, CSS, Bootstrap, Git, Github, Github Pages y JavaScript, aplicando los conocimientos en el manejo de datos mediante "LocalStorage"
+Este proyecto es un gestor de documentos simple para un departamento, donde permitira al usuario crear, actualizar y eliminar documentos para un seguimiento del flujo de informacion recibida.
+Este proyecto se encuentra realizado con las tecnologias de HTML5, CSS, Bootstrap, Git, Github, Github Pages y JavaScript, aplicando los conocimientos en el manejo de datos mediante "LocalStorage" y DOM.
 
 Fecha límite entrega : 04-06-2023.
 
