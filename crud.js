@@ -160,3 +160,19 @@ function edit(e) {
 
 }
 actualizar.addEventListener('click', edit)
+
+
+const botonTiempo = document.getElementById('modoTiempo')
+botonTiempo.addEventListener('click', modoTiempo)
+let dia = true;
+function modoTiempo() {
+    if (dia == true) {
+        botonTiempo.classList.add('bg-body')
+        botonTiempo.classList.remove('bg-secondary')
+        dia = false;
+    } else {
+        botonTiempo.classList.remove('bg-body')
+        botonTiempo.classList.add('bg-secondary')
+        dia = true;
+    }
+}
