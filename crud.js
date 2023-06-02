@@ -86,7 +86,7 @@ function listar() {
     <td>${pendiente.documento}</td>
     <td>${pendiente.responsable}</td>
     <td>${pendiente.estado}</td>
-    <td>
+    <td class="text-center">
     <button class="btn btn-primary align-content-center" onclick="editarFila(${pendiente.id})">Editar</button>
     <button class="btn btn-danger align-content-center" onclick="eliminarFila(${pendiente.id})">Eliminar</button>
     </td>
