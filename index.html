@@ -13,7 +13,7 @@
     <title>CRUD - Documentación Pendientes</title>
 </head>
 
-<body id="modoTiempo">
+<body>
     <!-- Navbar -->
     <nav class="navbar bg-primary" data-bs-theme="dark">
         <div class=" container-fluid">
@@ -21,16 +21,19 @@
                 <img src="assets/img/icono.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
                 Proyecto 2 CRUD - Documentación
             </a>
-            <button id="modoTiempo" type="submit" class="btn btn-info">Dia/Noche</button>
+            <div>
+                <button id="modoTiempo" type="submit" class="btn btn-info">Dia/Noche</button>
+            </div>
+
         </div>
     </nav>
 
     <!-- Titulo y encabezados  -->
     <!-- Tarjetas de ingreso   -->
     <div class="card m-lg-2 ">
-        <h1 class="card-header text-center ">Control Documental 2023</h1>
+        <h1 class="card-header text-center bg-dark-subtle ">Control Documental 2023</h1>
         <div class="card-body">
-            <h5 class="card-title">Descripción</h5>
+            <h5 class="card-title ">Descripción</h5>
             <p class="card-text">Ingrese los datos para los registros y seguimiento.</p>
 
             <form id="form">
@@ -73,7 +76,7 @@
 
     <!-- Tabla donde se muestran los datos guardados -->
     <div class="card m-lg-2">
-        <h5 class="card-header">Listado</h5>
+        <h5 class="card-header text-center bg-dark-subtle">Listado</h5>
         <div class="card-body">
             <h5 class="card-title">Detalle</h5>
 
@@ -99,10 +102,10 @@
             <div class="bg-info-subtle p-2 text-dark bg-opacity-50">
                 <p class="text-center"> Proyecto 2 - CRUD para Bootcamp por ROB 2023</p>
             </div>
-
-
         </div>
     </footer>
+
+
     <!-- Scripts -->
     <!-- Script : CRUD - aplicacion principal para proyecto -->
     <script src="crud.js"></script>
