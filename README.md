@@ -1,6 +1,7 @@
 # Proyecto2 - CRUD
 
 Gestor de documentos con HTML, CSS y Javascript
+
 ## Descripcion
 
 Este proyecto es un gestor de documentos simple para un departamento, donde les permitira crear, organizar y realizar un seguimiento de los documentos recibidos.
@@ -10,11 +11,11 @@ Fecha límite entrega : 04-06-2023.
 
 ## Insignias
 
-![Captura de pantalla](screenshot.png)
+
 
 ## Visual
 
-Insertar imagen a
+![Captura de pantalla](imagen.jpg)
 
 ## Construido con 🛠️
 
