@@ -14,7 +14,7 @@ Fecha límite entrega : 04-06-2023
 
 ## Insignias
 
-![Badge en Desarollo](https://img.shields.io/badge/Status-En%20Revision-yellow)
+![Badge en Desarollo](https://img.shields.io/badge/STATUS-Aprobado-green)
 
 ## Visual
 
